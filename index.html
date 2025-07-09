@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rocont App</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__body">
+            <a href="#" class="header__body-logo">
+              <img src="/logo.svg" alt="Logo" />
+            </a>
+            <nav class="header__menu">
+              <a href="#" class="header__menu-link">О системе</a>
+              <a href="#" class="header__menu-link">Архитектура</a>
+              <a href="#" class="header__menu-link">Мнения</a>
+              <button type="button" class="header__menu-btn">Попробовать</button>
+              <a href="#" class="header__menu-link">Для своих</a>
+            </nav>
+            <button type="button" class="header__burger" onclick="handleMenu()">
+              <span class="header__burger-line"></span>
+              <span class="header__burger-line"></span>
+              <span class="header__burger-line"></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="hero">
+          <div class="container">
+            <div class="hero__body">
+              <div class="hero__items">
+                <h1 class="hero__item-title">Просто потому что можем</h1>
+                <p class="hero__item-text">
+                  Мы сделали это средство не ради прибыли, а из любви к красивым словам. Один стик в
+                  день — и вы чувствуете, что делаете что-то важное. Что именно — решать вам.
+                </p>
+                <button type="button" class="hero__item-btn">
+                  Попробовать просто так
+                  <span>
+                    <svg
+                      width="44"
+                      height="20"
+                      viewBox="0 0 44 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M34 0V0C34 5.52285 38.4772 10 44 10V10"
+                        stroke="#1F8B48"
+                        stroke-width="2" />
+                      <path
+                        d="M33.875 20V20C33.875 14.4772 38.3522 10 43.875 10H44H-10"
+                        stroke="#1F8B48"
+                        stroke-width="2" />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <div class="hero__copyright">
+                <p>Сертификат есть. Но это не точно.</p>
+                <p>СГР №AM.01.01 .01.003.R.00 o47 4.06.24</p>
+              </div>
+            </div>
+            <div class="hero__mobile">
+              <div class="hero__items">
+                <h1 class="hero__item-title">Просто потому что можем</h1>
+                <p class="hero__item-text">
+                  Мы сделали это средство не ради прибыли, а из любви к красивым словам. Один стик в
+                  день — и вы чувствуете, что делаете что-то важное. Что именно — решать вам.
+                </p>
+                <button type="button" class="hero__item-btn">
+                  Попробовать просто так
+                  <span>
+                    <svg
+                      width="44"
+                      height="20"
+                      viewBox="0 0 44 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M34 0V0C34 5.52285 38.4772 10 44 10V10"
+                        stroke="#1F8B48"
+                        stroke-width="2" />
+                      <path
+                        d="M33.875 20V20C33.875 14.4772 38.3522 10 43.875 10H44H-10"
+                        stroke="#1F8B48"
+                        stroke-width="2" />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <div class="hero__copyright">
+                <p>Сертификат есть. Но это не точно.</p>
+                <p>СГР №AM.01.01 .01.003.R.00 o47 4.06.24</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about">
+          <div class="container">
+            <div class="about__body">
+              <div class="about__text">
+                <h1 class="about__text-title">Это — не совсем то, что вы думаете</h1>
+                <div class="slider -nav">
+                  <button class="slider -prev">
+                    <svg
+                      width="48"
+                      height="20"
+                      viewBox="0 0 48 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_116_1417)">
+                        <path
+                          d="M14 0V0C14 5.52285 9.52285 10 4 10V10"
+                          stroke="currentColor"
+                          stroke-width="2" />
+                        <path
+                          d="M14.125 20V20C14.125 14.4772 9.64785 10 4.125 10H4H58"
+                          stroke="currentColor"
+                          stroke-width="2" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_116_1417">
+                          <rect
+                            width="20"
+                            height="48"
+                            rx="10"
+                            transform="matrix(4.37114e-08 1 1 -4.37114e-08 0 0)"
+                            fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <button class="slider -next">
+                    <svg
+                      width="44"
+                      height="20"
+                      viewBox="0 0 44 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M34 0V0C34 5.52285 38.4772 10 44 10V10"
+                        stroke="currentColor"
+                        stroke-width="2" />
+                      <path
+                        d="M33.875 20V20C33.875 14.4772 38.3522 10 43.875 10H44H-10"
+                        stroke="currentColor"
+                        stroke-width="2" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="slider">
+                <!-- Swiper -->
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="/src/assets/images/slide-1.png" alt="Slide picture" />
+                      <div class="swiper-text">
+                        <h2>Немного упругости</h2>
+                        <p>Чуть-чуть сияния, и ощущение, что вы о себе позаботились</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/src/assets/images/slide-2.png" alt="Slide picture" />
+                      <div class="swiper-text">
+                        <h2>Немного упругости</h2>
+                        <p>Чуть-чуть сияния, и ощущение, что вы о себе позаботились</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/src/assets/images/slide-3.png" alt="Slide picture" />
+                      <div class="swiper-text">
+                        <h2>Немного упругости</h2>
+                        <p>Чуть-чуть сияния, и ощущение, что вы о себе позаботились</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/src/assets/images/slide-4.png" alt="Slide picture" />
+                      <div class="swiper-text">
+                        <h2>Немного упругости</h2>
+                        <p>Чуть-чуть сияния, и ощущение, что вы о себе позаботились</p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="/src/assets/images/slide-5.png" alt="Slide picture" />
+                      <div class="swiper-text">
+                        <h2>Немного упругости</h2>
+                        <p>Чуть-чуть сияния, и ощущение, что вы о себе позаботились</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="form">
+          <div class="container">
+            <form action="#" class="form__body">
+              <div class="form__text">
+                <h1 class="form__text-title">Если вы тоже решили «а почему бы и нет»</h1>
+                <ul class="form__text-list">
+                  <li class="form__list-item">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_93_764)">
+                        <rect
+                          x="24"
+                          width="24"
+                          height="24"
+                          rx="12"
+                          transform="rotate(90 24 0)"
+                          fill="white" />
+                        <path
+                          d="M12 0V0C12 6.62742 17.3726 12 24 12V12"
+                          stroke="#1F8B48"
+                          stroke-width="2" />
+                        <path
+                          d="M12 24V24C12 17.3726 17.3726 12 24 12V12H-40"
+                          stroke="#1F8B48"
+                          stroke-width="2" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_93_764">
+                          <rect
+                            x="24"
+                            width="24"
+                            height="24"
+                            rx="12"
+                            transform="rotate(90 24 0)"
+                            fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    Можно заказать много
+                  </li>
+                  <li class="form__list-item">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_93_764)">
+                        <rect
+                          x="24"
+                          width="24"
+                          height="24"
+                          rx="12"
+                          transform="rotate(90 24 0)"
+                          fill="white" />
+                        <path
+                          d="M12 0V0C12 6.62742 17.3726 12 24 12V12"
+                          stroke="#1F8B48"
+                          stroke-width="2" />
+                        <path
+                          d="M12 24V24C12 17.3726 17.3726 12 24 12V12H-40"
+                          stroke="#1F8B48"
+                          stroke-width="2" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_93_764">
+                          <rect
+                            x="24"
+                            width="24"
+                            height="24"
+                            rx="12"
+                            transform="rotate(90 24 0)"
+                            fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    Доступ возможен через северный интерфейс
+                  </li>
+                  <li class="form__list-item">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_93_764)">
+                        <rect
+                          x="24"
+                          width="24"
+                          height="24"
+                          rx="12"
+                          transform="rotate(90 24 0)"
+                          fill="white" />
+                        <path
+                          d="M12 0V0C12 6.62742 17.3726 12 24 12V12"
+                          stroke="#1F8B48"
+                          stroke-width="2" />
+                        <path
+                          d="M12 24V24C12 17.3726 17.3726 12 24 12V12H-40"
+                          stroke="#1F8B48"
+                          stroke-width="2" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_93_764">
+                          <rect
+                            x="24"
+                            width="24"
+                            height="24"
+                            rx="12"
+                            transform="rotate(90 24 0)"
+                            fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    Можно просто поболтать
+                  </li>
+                </ul>
+              </div>
+              <div class="form__items">
+                <div class="form__items-row">
+                  <input
+                    class="form__items-input"
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Имя" />
+                  <input
+                    class="form__items-input"
+                    type="text"
+                    name="number"
+                    id="number"
+                    placeholder="Телефон" />
+                </div>
+
+                <label class="checkbox">
+                  <input type="checkbox" class="checkbox -input" />
+                  <span class="checkbox -icon">
+                    <svg
+                      class="checkbox -svg -off"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M19 10C19 11.78 18.4722 13.5201 17.4832 15.0001C16.4943 16.4802 15.0887 17.6337 13.4442 18.3149C11.7996 18.9961 9.99002 19.1743 8.24419 18.8271C6.49836 18.4798 4.89471 17.6226 3.63604 16.364C2.37737 15.1053 1.5202 13.5016 1.17293 11.7558C0.825665 10.01 1.0039 8.20038 1.68508 6.55585C2.36627 4.91131 3.51983 3.50571 4.99987 2.51677C6.47991 1.52784 8.21997 1 10 1"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round" />
+                    </svg>
+                    <svg
+                      class="checkbox -svg -on"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M19 10C19 11.78 18.4722 13.5201 17.4832 15.0001C16.4943 16.4802 15.0887 17.6337 13.4442 18.3149C11.7996 18.9961 9.99002 19.1743 8.24419 18.8271C6.49836 18.4798 4.89471 17.6226 3.63604 16.364C2.37737 15.1053 1.5202 13.5016 1.17293 11.7558C0.825665 10.01 1.0039 8.20038 1.68508 6.55585C2.36627 4.91131 3.51983 3.50571 4.99987 2.51677C6.47991 1.52784 8.21997 1 10 1"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round" />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.7236 8.97952C7.3416 8.58052 6.7096 8.56452 6.3096 8.94652C5.9106 9.32752 5.8946 9.96052 6.2766 10.3605L8.4996 12.6905C8.6876 12.8875 8.9476 12.9995 9.2196 13.0005H9.2236C9.4946 13.0005 9.7536 12.8905 9.9416 12.6955L16.7186 5.69552C17.1026 5.29852 17.0926 4.66552 16.6956 4.28152C16.2976 3.89652 15.6646 3.90852 15.2816 4.30452L9.2286 10.5575L7.7236 8.97952Z"
+                        fill="white" />
+                    </svg>
+                  </span>
+                  <span class="checkbox -label"
+                    >Согласен(-на) на обработку чего угодно — лишь бы форма работала</span
+                  >
+                </label>
+                <button type="button" class="hero__item-btn">
+                  Отправить
+                  <span>
+                    <svg
+                      width="44"
+                      height="20"
+                      viewBox="0 0 44 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M34 0V0C34 5.52285 38.4772 10 44 10V10"
+                        stroke="#fff"
+                        stroke-width="2" />
+                      <path
+                        d="M33.875 20V20C33.875 14.4772 38.3522 10 43.875 10H44H-10"
+                        stroke="#fff"
+                        stroke-width="2" />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="container">
+            <div class="contacts__body">
+              <div class="contacts__text">
+                <h1 class="contacts__text-title">Контакты</h1>
+                <ul class="contacts__text-list">
+                  <li class="contacts__text-item">
+                    <svg
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <rect y="0.5" width="24" height="24" rx="12" fill="#1F8B48" />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12 11.6662C11.3108 11.6662 10.75 11.1054 10.75 10.4162C10.75 9.72704 11.3108 9.16621 12 9.16621C12.6892 9.16621 13.25 9.72704 13.25 10.4162C13.25 11.1054 12.6892 11.6662 12 11.6662ZM12 7.49954C10.3917 7.49954 9.08333 8.80788 9.08333 10.4162C9.08333 12.0245 10.3917 13.3329 12 13.3329C13.6083 13.3329 14.9167 12.0245 14.9167 10.4162C14.9167 8.80788 13.6083 7.49954 12 7.49954ZM12 18.8716C10.6042 17.5516 6.99999 13.8458 6.99999 10.7683C6.99999 8.04746 9.24249 5.83329 12 5.83329C14.7575 5.83329 17 8.04746 17 10.7683C17 13.8458 13.3958 17.5516 12 18.8716ZM12 4.16663C8.32416 4.16663 5.33333 7.12746 5.33333 10.7683C5.33333 15.3308 11.2075 20.4175 11.4575 20.6316C11.6142 20.7658 11.8067 20.8333 12 20.8333C12.1933 20.8333 12.3858 20.7658 12.5425 20.6316C12.7925 20.4175 18.6667 15.3308 18.6667 10.7683C18.6667 7.12746 15.6758 4.16663 12 4.16663Z"
+                        fill="white" />
+                    </svg>
+                    Офис, где делают странные, но симпатичные вещи
+                  </li>
+                  <li class="contacts__text-item">
+                    <svg
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <rect y="0.5" width="24" height="24" rx="12" fill="#1F8B48" />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M15.3333 11.6666H12.8333V9.16663C12.8333 8.70579 12.46 8.33329 12 8.33329C11.54 8.33329 11.1667 8.70579 11.1667 9.16663V12.5C11.1667 12.9608 11.54 13.3333 12 13.3333H15.3333C15.7942 13.3333 16.1667 12.9608 16.1667 12.5C16.1667 12.0391 15.7942 11.6666 15.3333 11.6666ZM12 19.1666C8.32417 19.1666 5.33334 16.1758 5.33334 12.5C5.33334 8.82413 8.32417 5.83329 12 5.83329C15.6758 5.83329 18.6667 8.82413 18.6667 12.5C18.6667 16.1758 15.6758 19.1666 12 19.1666ZM12 4.16663C7.40501 4.16663 3.66667 7.90496 3.66667 12.5C3.66667 17.095 7.40501 20.8333 12 20.8333C16.595 20.8333 20.3333 17.095 20.3333 12.5C20.3333 7.90496 16.595 4.16663 12 4.16663Z"
+                        fill="white" />
+                    </svg>
+                    Пн-Пт с 10:00 до 20:00
+                  </li>
+                  <li class="contacts__text-item">
+                    <span>
+                      <a href="tel:+88004444444" target="_blank">
+                        <svg
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <rect y="0.5" width="24" height="24" rx="12" fill="#1F8B48" />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M7.50008 5.83329C6.30508 5.83329 5.33341 6.80496 5.33341 7.99996C5.33341 14.1566 10.3426 19.1666 16.5001 19.1666C17.6942 19.1666 18.6667 18.195 18.6667 17C18.6667 16.9075 18.6609 16.8166 18.6492 16.7266L14.7992 15.8433C14.7226 15.99 14.6384 16.1491 14.5617 16.2975C14.1817 17.0225 13.9067 17.5491 13.2051 17.2666C10.4501 16.3 8.20091 14.05 7.22175 11.2616C6.92425 10.6075 7.49091 10.3108 8.20925 9.93579C8.35508 9.85913 8.51258 9.77663 8.65675 9.70163L7.77341 5.85079C7.68091 5.83913 7.59091 5.83329 7.50008 5.83329ZM16.5001 20.8333C9.42341 20.8333 3.66675 15.0766 3.66675 7.99996C3.66675 5.88579 5.38591 4.16663 7.50008 4.16663C7.71675 4.16663 7.93091 4.18496 8.13841 4.22079C8.34091 4.25329 8.54425 4.30496 8.74258 4.37329C9.01341 4.46746 9.21758 4.69496 9.28175 4.97496L10.4226 9.94496C10.4859 10.2183 10.4067 10.505 10.2117 10.7083C10.0984 10.8266 10.0959 10.8291 9.06258 11.37C9.89925 13.1816 11.3534 14.6308 13.1284 15.4391C13.6701 14.405 13.6734 14.4016 13.7917 14.2883C13.9951 14.0933 14.2834 14.0175 14.5551 14.0775L19.5259 15.2183C19.8051 15.2825 20.0326 15.4858 20.1259 15.7566C20.1942 15.9533 20.2459 16.1566 20.2801 16.3658C20.3151 16.5716 20.3334 16.785 20.3334 17C20.3334 19.1141 18.6134 20.8333 16.5001 20.8333Z"
+                            fill="white" />
+                        </svg>
+                        8 (800) 444 44 44
+                      </a>
+                      <a href="tel:+88008888888" target="_blank">
+                        <svg
+                          width="24"
+                          height="25"
+                          viewBox="0 0 24 25"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <rect y="0.5" width="24" height="24" rx="12" fill="#1F8B48" />
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M7.50008 5.83329C6.30508 5.83329 5.33341 6.80496 5.33341 7.99996C5.33341 14.1566 10.3426 19.1666 16.5001 19.1666C17.6942 19.1666 18.6667 18.195 18.6667 17C18.6667 16.9075 18.6609 16.8166 18.6492 16.7266L14.7992 15.8433C14.7226 15.99 14.6384 16.1491 14.5617 16.2975C14.1817 17.0225 13.9067 17.5491 13.2051 17.2666C10.4501 16.3 8.20091 14.05 7.22175 11.2616C6.92425 10.6075 7.49091 10.3108 8.20925 9.93579C8.35508 9.85913 8.51258 9.77663 8.65675 9.70163L7.77341 5.85079C7.68091 5.83913 7.59091 5.83329 7.50008 5.83329ZM16.5001 20.8333C9.42341 20.8333 3.66675 15.0766 3.66675 7.99996C3.66675 5.88579 5.38591 4.16663 7.50008 4.16663C7.71675 4.16663 7.93091 4.18496 8.13841 4.22079C8.34091 4.25329 8.54425 4.30496 8.74258 4.37329C9.01341 4.46746 9.21758 4.69496 9.28175 4.97496L10.4226 9.94496C10.4859 10.2183 10.4067 10.505 10.2117 10.7083C10.0984 10.8266 10.0959 10.8291 9.06258 11.37C9.89925 13.1816 11.3534 14.6308 13.1284 15.4391C13.6701 14.405 13.6734 14.4016 13.7917 14.2883C13.9951 14.0933 14.2834 14.0175 14.5551 14.0775L19.5259 15.2183C19.8051 15.2825 20.0326 15.4858 20.1259 15.7566C20.1942 15.9533 20.2459 16.1566 20.2801 16.3658C20.3151 16.5716 20.3334 16.785 20.3334 17C20.3334 19.1141 18.6134 20.8333 16.5001 20.8333Z"
+                            fill="white" />
+                        </svg>
+                        8 (800) 888 88 88
+                      </a>
+                    </span>
+                  </li>
+                  <li class="contacts__text-item">
+                    <a href="mailto:example@mail.ru">
+                      <svg
+                        width="24"
+                        height="25"
+                        viewBox="0 0 24 25"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect y="0.5" width="24" height="24" rx="12" fill="#1F8B48" />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M17.8333 17.5H6.16667C5.7075 17.5 5.33334 17.1267 5.33334 16.6667V8.54171L11.5 13.1667C11.6483 13.2784 11.8242 13.3334 12 13.3334C12.1758 13.3334 12.3517 13.2784 12.5 13.1667L18.6667 8.54171V16.6667C18.6667 17.1267 18.2925 17.5 17.8333 17.5ZM17.2775 7.50004L12 11.4584L6.72251 7.50004H17.2775ZM17.8333 5.83337H6.16667C4.78834 5.83337 3.66667 6.95504 3.66667 8.33337V16.6667C3.66667 18.045 4.78834 19.1667 6.16667 19.1667H17.8333C19.2117 19.1667 20.3333 18.045 20.3333 16.6667V8.33337C20.3333 6.95504 19.2117 5.83337 17.8333 5.83337Z"
+                          fill="white" />
+                      </svg>
+                      example@mail.ru
+                    </a>
+                  </li>
+                </ul>
+                <button type="button" class="hero__item-btn">
+                  Связаться
+                  <span>
+                    <svg
+                      width="44"
+                      height="20"
+                      viewBox="0 0 44 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M34 0V0C34 5.52285 38.4772 10 44 10V10"
+                        stroke="#1F8B48"
+                        stroke-width="2" />
+                      <path
+                        d="M33.875 20V20C33.875 14.4772 38.3522 10 43.875 10H44H-10"
+                        stroke="#1F8B48"
+                        stroke-width="2" />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+              <iframe
+                class="contacts__map"
+                src="https://yandex.ru/map-widget/v1/?ll=30.438012%2C59.994261&z=16.5&pt=30.438012,59.994261,pm2rdl"
+                width="100%"
+                height="450"
+                frameborder="0"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__body">
+            <nav class="footer__menu">
+              <ul class="footer__menu-list">
+                <li>
+                  <a href="#" class="footer__menu-link">О системе</a>
+                </li>
+                <li>
+                  <a href="#" class="footer__menu-link">Состав</a>
+                </li>
+              </ul>
+              <ul class="footer__menu-list">
+                <li>
+                  <a href="#" class="footer__menu-link">Архитектура</a>
+                </li>
+                <li>
+                  <a href="#" class="footer__menu-link">Отзывы</a>
+                </li>
+              </ul>
+              <ul class="footer__menu-list">
+                <li>
+                  <a href="#" class="footer__menu-link">Для своих</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="footer__copyright">
+              <p>Коллаген © 2025</p>
+              <p>Политика обработки чего-то личного</p>
+            </div>
+            <div class="footer__logo">
+              <img src="/logo.svg" alt="Rocont Logo" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+    <script src="/src/scripts/script.js"></script>
+  </body>
+</html>

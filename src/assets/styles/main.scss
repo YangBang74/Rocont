@@ -1,0 +1,33 @@
+@use './base/reset';
+@use './base/vars' as *;
+@use './base/typography';
+@use './utils/mixins' as *;
+
+@use './layout/header';
+@use './layout/footer';
+@use './components/button';
+@use './components/checkbox';
+@use './pages/home';
+
+body {
+  font-family: $primary-font;
+  color: $text-color;
+  overflow-x: hidden;
+  background: url('../images/background.png') no-repeat center / cover $background-color;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.container {
+  @include container(1200px, 0.625rem);
+}

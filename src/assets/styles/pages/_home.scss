@@ -1,0 +1,398 @@
+@use '../base/vars' as *;
+@use '../utils/mixins' as *;
+
+.hero__body {
+  background: url('/src/assets/images/hero-bg.png') no-repeat right / cover;
+  @include flex-between;
+  border-radius: $border-radius-small;
+  align-items: end;
+  color: $white-color;
+  padding: 4rem;
+  @include respond(lg) {
+    background-size: cover;
+    padding: 3rem;
+    background-image: url('/src/assets/images/hero-bg-640.png');
+    background-position: -10px 0;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  @include respond(md) {
+    padding: 1.5rem;
+    background-position: center;
+  }
+  @include respond(s) {
+    min-height: 12.5rem;
+  }
+}
+
+.hero__body .hero__item {
+  &-title {
+    @include respond(s) {
+      display: none;
+    }
+  }
+  &-text {
+    @include respond(sm) {
+      display: none;
+    }
+  }
+  &-btn {
+    @include respond(sm) {
+      display: none;
+    }
+  }
+  @include respond(sm) {
+    display: none;
+  }
+}
+
+.hero__item {
+  width: 50%;
+  @include respond(sm) {
+    width: 100%;
+  }
+  &-title {
+    font-size: 4rem;
+    font-family: $secondary-font;
+    line-height: 90%;
+    max-width: 37.5rem;
+    @include respond(lg) {
+      font-size: 2rem;
+      max-width: 16rem;
+    }
+    @include respond(sm) {
+      max-width: 11rem;
+      padding-bottom: 3rem;
+    }
+  }
+  &-text {
+    font-size: 1.3125rem;
+    max-width: 420px;
+    letter-spacing: -3%;
+    line-height: 140%;
+    margin: 2rem 0;
+    @include respond(lg) {
+      font-size: 1.125rem;
+      margin: 2rem 0;
+      line-height: 120%;
+    }
+    @include respond(md) {
+      max-width: 21.0625rem;
+    }
+  }
+  &-btn {
+    @include flex-inline;
+    font-family: $secondary-font;
+    font-size: 1.125rem;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: $border-radius;
+    color: $white-color;
+    background-color: $primary-color;
+    white-space: nowrap;
+    @include respond(lg) {
+      font-size: 1rem;
+    }
+    span {
+      min-width: 3.125rem;
+      background-color: $white-color;
+      border-radius: 3.125rem;
+      padding-right: 0.25rem;
+    }
+  }
+}
+
+.hero__body .hero__copyright {
+  @include respond(sm) {
+    display: none;
+  }
+}
+
+.hero__copyright {
+  text-align: right;
+  @include space-y(0.25rem);
+
+  p {
+    white-space: nowrap;
+    @include respond(lg) {
+      white-space: wrap;
+    }
+    @include respond(md) {
+      margin-top: 0.25rem;
+      width: 100%;
+      display: flex;
+      justify-content: end;
+    }
+  }
+}
+
+.hero__mobile {
+  display: none;
+  @include respond(sm) {
+    display: block;
+    .hero__item-title {
+      display: none;
+      @include respond(s) {
+        display: block;
+        padding: 0;
+        margin-top: 1.5rem;
+      }
+    }
+    .hero__item {
+      width: 100%;
+      &-text {
+        width: 100%;
+        font-size: 1.125rem;
+        max-width: auto;
+        font-weight: 500;
+      }
+      &-btn {
+        padding: 1rem;
+        width: 100%;
+        justify-content: center;
+      }
+    }
+    .hero__copyright {
+      margin-top: 1rem;
+      opacity: 50%;
+      font-size: 0.75rem;
+      p {
+        justify-content: start;
+        @include respond(s) {
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+.about {
+  padding: 6rem 0;
+  .about__body {
+    width: 100%;
+    @include flex-between;
+    align-items: stretch;
+    gap: 0.875rem;
+    @include respond(md) {
+      flex-direction: column;
+    }
+  }
+}
+
+.about__text {
+  width: 20%;
+  @include flex-between;
+  flex-direction: column;
+  align-items: stretch;
+  @include respond(md) {
+    width: 100%;
+  }
+  &-title {
+    font-family: $secondary-font;
+    font-size: 2.5rem;
+    @include respond(lg) {
+      font-size: 1.75rem;
+    }
+  }
+  .slider.-nav {
+    @include flex-inline;
+    justify-content: start;
+    gap: 1rem;
+    @include respond(md) {
+      display: none;
+    }
+    .-prev,
+    .-next {
+      width: 3rem;
+      height: 1.25rem;
+      background-color: $white-color;
+      border-radius: $border-radius;
+    }
+    .-prev:hover,
+    .-next:hover {
+      background-color: $primary-color;
+      color: $white-color;
+    }
+  }
+}
+
+.slider {
+  width: 75%;
+  @include respond(md) {
+    width: 100%;
+  }
+  .swiper-slide {
+    position: relative;
+    width: 18.75rem;
+    img {
+      border-radius: $border-radius-small;
+    }
+    .swiper-text {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      padding: 2rem;
+      width: 100%;
+      border-radius: $border-radius-small;
+      z-index: 50;
+      background: $primary-color;
+      color: $white-color;
+      transition: 0.2s;
+      background: linear-gradient(180deg, rgba(31, 139, 72, 0) 0%, rgba(31, 139, 72, 1) 100%);
+      h2 {
+        font-family: $secondary-font;
+        font-size: 1.5rem;
+
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  .swiper-slide:hover .swiper-text {
+    opacity: 1;
+  }
+}
+
+.form {
+  margin: 4rem 0;
+}
+
+.form__body {
+  background-color: $primary-color;
+  border-radius: $border-radius-small;
+  padding: 3rem;
+  @include flex-between;
+  align-items: start;
+  color: $white-color;
+  @include respond(md) {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+}
+
+.form__text {
+  width: 35%;
+  @include respond(md) {
+    width: 100%;
+  }
+  &-title {
+    font-family: $secondary-font;
+  }
+  &-list {
+    margin-top: 1.5rem;
+    @include space-y(1rem);
+    .form__list-item {
+      @include flex-inline;
+      gap: 0.5rem;
+      font-size: 1.125rem;
+      font-weight: 500;
+    }
+    svg {
+      min-width: 1.5rem;
+    }
+  }
+}
+
+.form__items {
+  width: 50%;
+  @include respond(md) {
+    width: 100%;
+  }
+  &-input {
+    min-width: none;
+    flex: 1;
+    width: 100%;
+    background-color: $white-color;
+    border-radius: $border-radius;
+    padding: 0.5rem 1.5rem;
+    margin-bottom: 0.5rem;
+    input {
+      min-width: none;
+      width: auto;
+    }
+  }
+  &-row {
+    @include respond(md) {
+      @include flex-inline;
+      gap: 0.5rem;
+    }
+    @include respond(s) {
+      flex-direction: column;
+    }
+  }
+  .hero__item-btn {
+    margin-top: 1rem;
+    background-color: $white-color;
+    color: $text-color;
+    span {
+      background-color: $primary-color;
+    }
+  }
+}
+
+.contacts__body {
+  @include flex-between;
+  gap: 0.5rem;
+  @include respond(md) {
+    flex-direction: column;
+  }
+}
+
+.contacts__text {
+  width: 50%;
+  height: 28.125rem;
+  border-radius: $border-radius-small;
+  background-color: $white-color;
+  padding: 4rem;
+
+  @include space-y(2rem);
+  @include respond(lg) {
+    padding: 3rem;
+  }
+  @include respond(md) {
+    width: 100%;
+    padding: 1.5rem;
+    @include space-y(1.5rem);
+    height: auto;
+  }
+  &-title {
+    font-family: $secondary-font;
+    font-size: 2.5rem;
+    @include respond(md) {
+      font-size: 1.75rem;
+    }
+  }
+  &-list {
+    @include space-y(1rem);
+  }
+  &-item,
+  &-item a {
+    @include flex-inline;
+    gap: 0.5rem;
+    svg {
+      min-width: 1.5rem;
+    }
+    span {
+      @include flex-inline;
+      @include respond(lg) {
+        display: block;
+        @include space-y(1rem);
+      }
+    }
+  }
+  &-item a {
+    white-space: nowrap;
+  }
+  &-item a:first-child {
+    padding-right: 2rem;
+  }
+}
+
+.contacts__map {
+  width: 50%;
+  border-radius: $border-radius-small;
+  @include respond(md) {
+    width: 100%;
+  }
+}
